@@ -1,0 +1,13 @@
+﻿  fonctionsPontDiv.c
+O:\APPLICATIONS\Echanges_Eleves\ES\SLO1\Perret_MelissaMarie\Epreuve\PROG\PROJET1_S2_PERRET\PROJET1_S2_PERRET\fonctionsPontDiv.c(18,40): warning C4047:  '>' : les niveaux d'indirection de 'str_pontDiviseur *' et de 'int' sont différents
+O:\APPLICATIONS\Echanges_Eleves\ES\SLO1\Perret_MelissaMarie\Epreuve\PROG\PROJET1_S2_PERRET\PROJET1_S2_PERRET\fonctionsPontDiv.c(20,39): error C2440:  '=' : impossible de convertir de 'int' en 'str_pontDiviseur'
+O:\APPLICATIONS\Echanges_Eleves\ES\SLO1\Perret_MelissaMarie\Epreuve\PROG\PROJET1_S2_PERRET\PROJET1_S2_PERRET\fonctionsPontDiv.c(24,21): warning C4047:  '=' : les niveaux d'indirection de 'str_pontDiviseur *' et de 'int' sont différents
+O:\APPLICATIONS\Echanges_Eleves\ES\SLO1\Perret_MelissaMarie\Epreuve\PROG\PROJET1_S2_PERRET\PROJET1_S2_PERRET\fonctionsPontDiv.c(30,42): warning C4047:  '>' : les niveaux d'indirection de 'str_pontDiviseur *' et de 'int' sont différents
+O:\APPLICATIONS\Echanges_Eleves\ES\SLO1\Perret_MelissaMarie\Epreuve\PROG\PROJET1_S2_PERRET\PROJET1_S2_PERRET\fonctionsPontDiv.c(32,39): warning C4047:  '=' : les niveaux d'indirection de 'str_pontDiviseur *' et de 'int' sont différents
+O:\APPLICATIONS\Echanges_Eleves\ES\SLO1\Perret_MelissaMarie\Epreuve\PROG\PROJET1_S2_PERRET\PROJET1_S2_PERRET\fonctionsPontDiv.c(34,30): warning C4047:  '<=' : les niveaux d'indirection de 'str_pontDiviseur *' et de 'int' sont différents
+O:\APPLICATIONS\Echanges_Eleves\ES\SLO1\Perret_MelissaMarie\Epreuve\PROG\PROJET1_S2_PERRET\PROJET1_S2_PERRET\fonctionsPontDiv.c(36,21): warning C4047:  '=' : les niveaux d'indirection de 'str_pontDiviseur *' et de 'int' sont différents
+  maintest1_s2.c
+O:\APPLICATIONS\Echanges_Eleves\ES\SLO1\Perret_MelissaMarie\Epreuve\PROG\PROJET1_S2_PERRET\PROJET1_S2_PERRET\fonctionsPontDiv.c(42,9): warning C4477:  'printf' : la chaîne de format '%f' nécessite un argument de type 'double', mais l'argument variadique 1 est de type 'int'
+O:\APPLICATIONS\Echanges_Eleves\ES\SLO1\Perret_MelissaMarie\Epreuve\PROG\PROJET1_S2_PERRET\PROJET1_S2_PERRET\maintest1_s2.c(59,1): error C4996:  'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Génération de code en cours...
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(1274): message :  voir la déclaration de 'scanf'

@@ -1,0 +1,11 @@
+﻿  fonctionsPontDiv.c
+  O:\APPLICATIONS\Echanges_Eleves\ES\SLO1\Bucher_Mathieu\Epreuve\PROG\PROJET1_S2_BUCHER\PROJET1_S2_BUCHER\PontResistifs.h: warning C4335: Format de fichier Mac détecté : convertissez le fichier source au format DOS ou UNIX
+O:\APPLICATIONS\Echanges_Eleves\ES\SLO1\Bucher_Mathieu\Epreuve\PROG\PROJET1_S2_BUCHER\PROJET1_S2_BUCHER\PontResistifs.h(1,1): warning C4067:  jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+O:\APPLICATIONS\Echanges_Eleves\ES\SLO1\Bucher_Mathieu\Epreuve\PROG\PROJET1_S2_BUCHER\PROJET1_S2_BUCHER\PontResistifs.h(6,1): error C2059:  erreur de syntaxe : '}'
+  mainProjet1_S2.c
+O:\APPLICATIONS\Echanges_Eleves\ES\SLO1\Bucher_Mathieu\Epreuve\PROG\PROJET1_S2_BUCHER\PROJET1_S2_BUCHER\PontResistifs.h(7,1): error C1070:  non concordance #if/#endif dans le fichier 'O:\APPLICATIONS\Echanges_Eleves\ES\SLO1\Bucher_Mathieu\Epreuve\PROG\PROJET1_S2_BUCHER\PROJET1_S2_BUCHER\PontResistifs.h'
+O:\APPLICATIONS\Echanges_Eleves\ES\SLO1\Bucher_Mathieu\Epreuve\PROG\PROJET1_S2_BUCHER\PROJET1_S2_BUCHER\PontResistifs.h(7,1): error C1070: O:\APPLICATIONS\Echanges_Eleves\ES\SLO1\Bucher_Mathieu\Epreuve\PROG\PROJET1_S2_BUCHER\PROJET1_S2_BUCHER\PontResistifs.h: warning C4335: Format de fichier Mac détecté : convertissez le fichier source au format DOS ou UNIX
+O:\APPLICATIONS\Echanges_Eleves\ES\SLO1\Bucher_Mathieu\Epreuve\PROG\PROJET1_S2_BUCHER\PROJET1_S2_BUCHER\PontResistifs.h(1,1): warning C4067:  jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+O:\APPLICATIONS\Echanges_Eleves\ES\SLO1\Bucher_Mathieu\Epreuve\PROG\PROJET1_S2_BUCHER\PROJET1_S2_BUCHER\PontResistifs.h(6,1): error C2059:  erreur de syntaxe : '}'
+  Génération de code en cours...
+O:\APPLICATIONS\Echanges_Eleves\ES\SLO1\Bucher_Mathieu\Epreuve\PROG\PROJET1_S2_BUCHER\PROJET1_S2_BUCHER\PontResistifs.h(7,1): error C1070:  non concordance #if/#endif dans le fichier 'O:\APPLICATIONS\Echanges_Eleves\ES\SLO1\Bucher_Mathieu\Epreuve\PROG\PROJET1_S2_BUCHER\PROJET1_S2_BUCHER\PontResistifs.h'

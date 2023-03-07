@@ -1,0 +1,3 @@
+﻿  fonctionsPontDiv.c
+O:\APPLICATIONS\Echanges_Eleves\ES\SLO1\El-Ghandour_Abdel-Nasser\Epreuve\PROG\PROJET1_S1_ELGHANDOUR\PROJET1_S1_ELGHANDOUR\PontResistifs.h(11,29): warning C4244: 'initialisation' : conversion de 'double' en 'const int', perte possible de données
+O:\APPLICATIONS\Echanges_Eleves\ES\SLO1\El-Ghandour_Abdel-Nasser\Epreuve\PROG\PROJET1_S1_ELGHANDOUR\PROJET1_S1_ELGHANDOUR\fonctionsPontDiv.c(13,1): error C2059: erreur de syntaxe : '}'
