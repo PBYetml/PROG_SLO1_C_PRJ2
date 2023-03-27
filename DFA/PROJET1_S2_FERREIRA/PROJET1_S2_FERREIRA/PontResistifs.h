@@ -31,4 +31,5 @@ extern void InitInfoPontDiviseur(struct pontDiviseur* demoPontDiv);
 extern void CalculTensionPontDiviseur(struct pontDiviseur* demoPontDiv);
 extern void AffichageTensionPontDiviseur(struct pontDiviseur demoPontDiv);
 
+
 #endif
