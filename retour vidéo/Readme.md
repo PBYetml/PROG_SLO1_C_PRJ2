@@ -1,4 +1,4 @@
-# Retour Video pour vos projet CPP 
+# Retour Video pour vos projet C
 
 ## Retour pour ADC
 1. retour vidéo 1 concernant les issues [#10](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/10) => voir [vidéo 1]()
