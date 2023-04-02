@@ -21,10 +21,9 @@
 
 ## Retour pour DFA 
 1. retour vidéo 1 concernant les issues [#1](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/1) => voir [vidéo 1](https://www.swisstransfer.com/d/dbedc4bb-b5ef-4494-9178-b9e80c6c39e9)
-2. retour vidéo 2 concernant les issues [#20](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/20) => voir [vidéo 2]()
-3. retour vidéo 2 concernant les issues [#21](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/21) 
-4. retour vidéo 3 concernant les issues [#40](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/40) => voir [vidéo 3]()
-5. 
+2. retour vidéo 2 concernant les issues [#20](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/20), [#21](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/21), [#40](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/40)  => voir [vidéo 2](https://www.swisstransfer.com/d/85019707-0e94-4771-ab11-17bbf37f37aa)
+ [#21](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/21) 
+
 
 ## Retour pour JAR
 1. retour vidéo 1 concernant les issues [#5](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/5) => voir [vidéo 1]()
