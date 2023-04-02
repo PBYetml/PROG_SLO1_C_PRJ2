@@ -29,11 +29,9 @@
 3. retour vidéo 3 concernant les issues [#25](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/25) et [#36](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/36) => voir [vidéo 3](https://www.swisstransfer.com/d/7e1fcc66-018f-4541-b81d-e2eecde95b00)
 
 ## Retour pour KAN
-1. retour vidéo 1 concernant les issues [#8](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/8) => voir [vidéo 1]()
-2. retour vidéo 2 concernant les issues [#13](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/13) => voir [vidéo 2]()
-3. retour vidéo 3 concernant les issues [#28](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/28) => voir [vidéo 3]()
-4. retour vidéo 4 concernant les issues [#33](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/33) => voir [vidéo 4]()
-5. retour vidéo 5 concernant les issues [#46](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/46) => voir [vidéo 5]()
+1. retour vidéo 1 concernant les issues [#8](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/8) => voir [vidéo 1](https://www.swisstransfer.com/d/909c605f-b453-45f1-a782-e9fbd07f3b3f)
+2. retour vidéo 2 concernant les issues [#13](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/13), [#28](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/28), [#33](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/33)  => voir [vidéo 2](https://www.swisstransfer.com/d/c8b31e82-1d2d-4b08-babd-9d211a510e03)
+3. retour vidéo 3 concernant les issues [#46](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/46) => voir [vidéo 3](https://www.swisstransfer.com/d/3068b6d4-f6f4-454c-b7ec-3b8ddeeb82d8)
 
 ## Retour pour LMS 
 1. retour vidéo 1 concernant les issues [#3](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/3) => voir [vidéo 1]()
