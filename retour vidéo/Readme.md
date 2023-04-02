@@ -8,7 +8,7 @@
 5. retour vidéo 5 concernant les issues [#48](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/48) => voir [vidéo 5](https://www.swisstransfer.com/d/601c80ad-1f12-4b8a-9a5d-8c562945ae69)
 
 ## Retour pour CFO
-1. retour vidéo 1 concernant les issues [#7](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/11) => voir [vidéo 1]()
+1. retour vidéo 1 concernant les issues [#7](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/7) => voir [vidéo 1]()
 2. retour vidéo 2 concernant les issues [#14](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/14) => voir [vidéo 2]()
 3. retour vidéo 3 concernant les issues [#27](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/27) => voir [vidéo 3]()
 4. retour vidéo 4 concernant les issues [#34](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/34) => voir [vidéo 4]()
