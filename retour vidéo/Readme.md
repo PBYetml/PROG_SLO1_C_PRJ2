@@ -8,11 +8,10 @@
 5. retour vidéo 5 concernant les issues [#48](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/48) => voir [vidéo 5](https://www.swisstransfer.com/d/601c80ad-1f12-4b8a-9a5d-8c562945ae69)
 
 ## Retour pour CFO
-1. retour vidéo 1 concernant les issues [#7](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/7) => voir [vidéo 1]()
-2. retour vidéo 2 concernant les issues [#14](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/14) => voir [vidéo 2]()
-3. retour vidéo 3 concernant les issues [#27](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/27) => voir [vidéo 3]()
-4. retour vidéo 4 concernant les issues [#34](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/34) => voir [vidéo 4]()
-5. retour vidéo 4 concernant les issues [#45](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/45) => voir [vidéo 5]()
+1. retour vidéo 1 concernant les issues [#7](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/7) => voir [vidéo 1](https://www.swisstransfer.com/d/de6a6268-b8ec-4277-adac-2e48d6c8d238)
+2. retour vidéo 2 concernant les issues [#14](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/14) => voir [vidéo 2](https://www.swisstransfer.com/d/9b91ffbe-d3cb-4573-9911-fd2b29129ef0)
+3. retour vidéo 3 concernant les issues [#27](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/27) et [#34](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/34)=> voir [vidéo 3](https://www.swisstransfer.com/d/56558eb4-fcd2-4d2d-8b71-1b60dcab50b1)
+5. retour vidéo 4 concernant les issues [#45](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/45) => voir [vidéo 4](https://www.swisstransfer.com/d/bac37d28-f0f7-4d13-9c37-8a6f286e8eea)
 
 ## Retour pour DBS 
 1. retour vidéo 1 concernant les issues [#2](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/2) => voir [vidéo 1]()
