@@ -46,11 +46,9 @@
 4. retour vidéo 4 concernant les issues [#44](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/44) => voir [vidéo 4](https://www.swisstransfer.com/d/46242e4d-e8dd-413e-8546-7170f2792e4e)
 
 ## Retour pour MPT 
-1. retour vidéo 1 concernant les issues [#4](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/4) => voir [vidéo 1]()
-2. retour vidéo 2 concernant les issues [#17](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/17) => voir [vidéo 2]()
-3. retour vidéo 3 concernant les issues [#24](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/24) => voir [vidéo 3]()
-4. retour vidéo 4 concernant les issues [#37](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/37) => voir [vidéo 4]()
-5. retour vidéo 5 concernant les issues [#43](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/43) => voir [vidéo 5]()
+1. retour vidéo 1 concernant les issues [#4](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/4) => voir [vidéo 1](https://www.swisstransfer.com/d/7d91ac70-aa39-494f-8a9b-0d0f3023e05d)
+2. retour vidéo 2 concernant les issues [#17](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/17), [#24](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/24), [#37](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/37) => voir [vidéo 2](https://www.swisstransfer.com/d/a888c340-a59e-4b3e-8066-220d4ce3ab20)
+3. retour vidéo 5 concernant les issues [#43](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/43) => voir [vidéo 5]()
 
 ## Retour pour NEG 
 1. retour vidéo 1 concernant les issues [#9](https://github.com/PBYetml/PROG_SLO1_C_PRJ2/issues/9) => voir [vidéo 1]()
