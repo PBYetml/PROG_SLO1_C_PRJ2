@@ -29,8 +29,8 @@ typedef struct
 {
 	char nbRes;		// Nombre de résistances dans le pont
 	char vccPont;	// Tension d'alimentation du pont
-	int	tb_ValRes[10];	// Tableau comprenant la valeur des résistances
-	float tb_URes[10];	// Tableau comprenant la tension sur chaque résistance
+	float	tb_ValRes[10];	// Tableau comprenant la valeur des résistances
+	float	tb_URes[10];	// Tableau comprenant la tension sur chaque résistance
 }pontDiviseur;
 #endif // ! STRUCTURE_H
 

@@ -47,6 +47,7 @@ void InitInfoPontDiviseur(pontDiviseur* demoPontDiv)
 		printf("La valeur entree est trop petit. Votre nombre de resistances est 1\n");
 	}
 
+	//-- s'assure que le buffer est vider pour refaire une nouvelle demande --//
 	while ((getchar() != '\n') && (getchar() != EOF));
 
 	for (i = 0; i < demoPontDiv->nbRes; i++)
@@ -56,11 +57,11 @@ void InitInfoPontDiviseur(pontDiviseur* demoPontDiv)
 			// Afficher une demande de la valeur de la résistance
 			printf("Entrer la valeur de la resistance %d\n", i);
 			// Récupération de la valeur de la résistance
-			scanf("%d", &demoPontDiv->tb_ValRes[i]);
+			scanf("%f", &demoPontDiv->tb_ValRes[i]);
 			// Test que la valeur soit dans les limites définies si non recommencer
 			if ((demoPontDiv->tb_ValRes[i] > RMAX) || (demoPontDiv->tb_ValRes[i] < RMIN))
 			{
-				printf("La valeur ne rentre pas dans les limites(maximum %d et minimum %d)\n", RMAX, RMIN);
+				printf("La valeur ne rentre pas dans les limites(maximum %f et minimum %f)\n", RMAX, RMIN);
 			}
 		} while ((demoPontDiv->tb_ValRes[i] > RMAX) || (demoPontDiv->tb_ValRes[i] < RMIN));
 	}
@@ -68,8 +69,6 @@ void InitInfoPontDiviseur(pontDiviseur* demoPontDiv)
 
 	// Afficher	une demande de Vcc du pont
 	printf("Entrer la tension de votre pont\n");
-	//-- s'assure que le buffer est vider pour refaire une nouvelle demande --//
-
 	// Récupération de la tension du pont
 	scanf("%d", &demoPontDiv->vccPont);
 	// Test que la tension du pont ne soit pas plus grand ou plus petit que les limites
@@ -97,7 +96,7 @@ void InitInfoPontDiviseur(pontDiviseur* demoPontDiv)
 void CalculTensionPontDiviseur(pontDiviseur* demoPontDiv)
 {
 	// Variables locales
-	int rTot = 0;
+	float rTot = 0;
 	char i = 0;
 
 	for (i = 0; i < demoPontDiv->nbRes; i++)
@@ -126,6 +125,6 @@ void AffichageTensionPontDiviseur(pontDiviseur* demoPontDiv)
 
 	for (i = 0; i < demoPontDiv->nbRes; i++)
 	{
-		printf("Tension sur la resistance %d: %.3fV\n", i, demoPontDiv->tb_URes[i]);
+		printf("Tension sur la resistance %d: %.2eV\n", i, demoPontDiv->tb_URes[i]);
 	}
 }
