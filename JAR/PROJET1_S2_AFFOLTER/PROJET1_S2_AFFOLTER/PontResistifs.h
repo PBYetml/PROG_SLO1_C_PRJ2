@@ -17,9 +17,9 @@
 #define HEADER
 
 // Variables globales
-#define NBMAXRES		10			// Nombre maximum de résistances
+#define NBMAXRES	10			// Nombre maximum de résistances
 #define	VCCMAX		30			// Tension maximum du pont
-#define RMAX		10000000	// Valeur maximum d'une résistnace
+#define RMAX		10000000.0	// Valeur maximum d'une résistnace
 #define	RMIN		0.1			// Valeur minimum d'une résistance
 
 // Stuctures
@@ -38,6 +38,6 @@ typedef struct
 // Prototype de fonction
 void InitInfoPontDiviseur(pontDiviseur* demoPontDiv);
 void CalculTensionPontDiviseur(pontDiviseur* demoPontDiv);
-void AffichageTensionPontDiviseur(pontDiviseur demoPontDiv);
+void AffichageTensionPontDiviseur(pontDiviseur* demoPontDiv);
 
 #endif

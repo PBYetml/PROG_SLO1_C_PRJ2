@@ -53,7 +53,7 @@ void main()
 		CalculTensionPontDiviseur(&monPontDiviseur);
 		
 		//-- afficahge de la tension sur chaque pont diviseur --// 
-		AffichageTensionPontDiviseur(monPontDiviseur);
+		AffichageTensionPontDiviseur(&monPontDiviseur);
 
 		printf("\nVoulez-vous quitter le programme ? [o/n]"); 
 		scanf("%c", &choixUser); 
