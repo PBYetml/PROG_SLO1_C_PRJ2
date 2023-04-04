@@ -2,7 +2,7 @@
 //Nom du fichier		: fonctionsPontDiv.c
 //Nom auteur			: Diogo Ferreira
 //Date de création		: 07.03.2023
-//Date de modification	: 07.03.2023 DF
+//Date de modification	: 04.04.2023 DF
 /*
   Description:
   fonction qui permet d'initialiser les valeurs de résistance, calculer et afficher le résultat
@@ -20,20 +20,20 @@
 
 
 //fonction pour initialiser une structure avec le nombre de résistance/valeur de résistance/tension alim
-void InitInfoPontDiviseur(struct pontDiviseur* demoPontDiv)
+void InitInfoPontDiviseur(pontDiviseur *demoPontDiv)
 {
-	float valeurUser;
+	float valeurUserFloat;
+	int valeurUserInt;
 	unsigned int i;
 	int Error = 0;
 	//nombre de résistance
 	printf("Entrer le nombre de resistance (Max %d / type entier):\n", MAXNBRRES);
-	scanf_s("%f", &valeurUser);
-	if (valeurUser > MAXNBRRES)
-		valeurUser = MAXNBRRES;
-	if (valeurUser < 1)
-		valeurUser = 1;
-	demoPontDiv->NbrMaxRes = valeurUser;
-
+	scanf_s("%d", &valeurUserInt);
+	if (valeurUserInt > MAXNBRRES)
+		valeurUserInt = MAXNBRRES;
+	else if (valeurUserInt < 1)
+		valeurUserInt = 1;
+	demoPontDiv->NbrMaxRes = valeurUserInt;
 	//insertion des valeurs de résistance
 	for (i = 0; i < demoPontDiv->NbrMaxRes; i++)
 	{
@@ -41,39 +41,37 @@ void InitInfoPontDiviseur(struct pontDiviseur* demoPontDiv)
 		do
 		{
 			Error = 0;
-			scanf_s("%f", &valeurUser);
-			if ((valeurUser > MAXRES) || (valeurUser < MINRES))
+			scanf_s("%f", &valeurUserFloat);
+			if ((valeurUserFloat > MAXRES) || (valeurUserFloat < MINRES))
 			{
 				Error = 1;
 				printf("ERREUR: VALEUR INCORRECT\n");
 				while ((getchar() != '\n') && (getchar() != EOF));
 			}
 			else
-				demoPontDiv->TbResistor[i] = valeurUser;
+				demoPontDiv->TbResistor[i] = valeurUserFloat;
 				
 		} while (Error == 1);
-		
 	}
-
 	//tension circuit
 	printf("Entrer la tension du circuit (Max %d / type entier):\n", MAXVALIM);
-	scanf_s("%f", &valeurUser);
-	if (valeurUser > MAXVALIM)
-		valeurUser = MAXVALIM;
-	if (valeurUser < 1)
-		valeurUser = 1;
-	demoPontDiv->VAlim = valeurUser;
+	scanf_s("%d", &valeurUserInt);
+	if (valeurUserInt > MAXVALIM)
+		valeurUserInt = MAXVALIM;
+	else if (valeurUserInt < 1)
+		valeurUserInt = 1;
+	demoPontDiv->VAlim = valeurUserInt;
 
 	//fin de l'initialisation
 	while ((getchar() != '\n') && (getchar() != EOF));
 }
 
 //fonction pour calculer les différente tension des résistances
-void CalculTensionPontDiviseur(struct pontDiviseur* demoPontDiv) 
+void CalculTensionPontDiviseur(pontDiviseur* demoPontDiv) 
 {
 	float RTotal = 0;
 	float Rdiv = 0;
-	int i;
+	unsigned int i;
 	//initialisation de la résitance max du circuit
 	for (i = 0; i < demoPontDiv->NbrMaxRes; i++) 
 	{
@@ -93,7 +91,7 @@ void CalculTensionPontDiviseur(struct pontDiviseur* demoPontDiv)
 }
 
 //fonction qui permet d'afficher les réstultats des tensions des résistance.
-void AffichageTensionPontDiviseur(struct pontDiviseur demoPontDiv)
+void AffichageTensionPontDiviseur(pontDiviseur demoPontDiv)
 {
 	unsigned int i;
 	//espace entre initialisation et les résultats
