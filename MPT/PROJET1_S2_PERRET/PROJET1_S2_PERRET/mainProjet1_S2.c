@@ -37,37 +37,31 @@
 void main()
 {
 	//-- déclaration de variables --// 
-	char choixUser = 0; 
+	char choixUser = 0;
 
 	//-- déclaration de structure --// 
-	str_pontDiviseur parametres; 
+	str_pontDiviseur str_structureValeurs;
 
 	//-- boucle permettant de savoir si l'utilisateur veut continuer ou pas --// 
 	do
 	{
 		//-- appel de fonction
-		parametre
+		//-- insertion de valeur de résistance pour le pont divisueur de tension --//
+		InitInfoPontDiviseur(&str_structureValeurs);
 
-			//-- insertion de valeur de résistance pour le pont divisueur de tension --//
-			scanf_s("%d", &choixUser);
-
-			//-- calcul de la tension sur chaque résistance du pont diviseur --// 
-			int vcc; 
-			int resistanceR1:
-			int resistanceR2;
-			int resulat; 
-			resulat = vcc * (resistanceR2 / (resistanceR1 + resistanceR2)); 
+		//-- calcul de la tension sur chaque résistance du pont diviseur --// 
+		CalculTensionPontDiviseur(&str_structureValeurs);
 
 		//-- afficahge de la tension sur chaque pont diviseur --// 
-		AffichageTensionPontDiviseur(choixUser);
+		AffichageTensionPontDiviseur(str_structureValeurs);
 
-		printf("\nVoulez-vous quitter le programme ? [o/n]"); 
-		scanf("%c", &choixUser); 
+		printf("\nVoulez-vous quitter le programme ? [o/n]");
+		scanf_s("%c", &choixUser);
 
 		//-- s'assure que le buffer est vider pour refaire une nouvelle demande --//
 		while ((getchar() != '\n') && (getchar() != EOF));
-		
-	} while (!(choixUser == 'o' || choixUser == 'O')); 
+
+	} while (!(choixUser == 'o' || choixUser == 'O'));
 
 
 	//pause du programme//
