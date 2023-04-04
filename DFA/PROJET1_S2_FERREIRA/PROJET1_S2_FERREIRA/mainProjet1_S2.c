@@ -2,7 +2,7 @@
 // Nom du projet 		: Calculator Pont Diviseur 
 // Nom du fichier 		: mainTest1_s3.c
 // Date de création 	: 16.02.2021
-// Date de modification : 07.03.2023 DF
+// Date de modification : 04.04.2023 DF
 //
 // Auteur 				: Philou (Ph. Bovey)
 //
@@ -38,7 +38,7 @@ void main()
 	char choixUser = 0; 
 
 	//-- déclaration de structure --// 
-	struct pontDiviseur demoPontDiv;
+	pontDiviseur demoPontDiv;
 
 	//-- boucle permettant de savoir si l'utilisateur veut continuer ou pas --// 
 	do
@@ -54,7 +54,7 @@ void main()
 		AffichageTensionPontDiviseur(demoPontDiv);
 
 		printf("\nVoulez-vous quitter le programme ? [o/n]"); 
-		scanf("%c", &choixUser); 
+		scanf_s("%c", &choixUser,1);
 
 		//-- s'assure que le buffer est vider pour refaire une nouvelle demande --//
 		while ((getchar() != '\n') && (getchar() != EOF));
