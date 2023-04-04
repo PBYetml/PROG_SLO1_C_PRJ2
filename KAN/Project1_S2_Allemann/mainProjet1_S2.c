@@ -22,7 +22,7 @@
 //--- librairie standart ---//
 #include <stdio.h>                  // entrée - sortie
 #include <stdlib.h>                 // pour les fonctions systèmes
-#include <stdint.h>
+
 
 //-- librairie personnelle --// 
 #include "PontResistifs.h"
@@ -37,30 +37,26 @@ void main()
 {
 	//-- déclaration de variables --// 
 	char choixUser = 0; 
-
+	
 	//-- déclaration de structure --// 
 	
-	typedef pontDiviseur;
+	pontDiviseur demoPontDiv;
 
 	//-- boucle permettant de savoir si l'utilisateur veut continuer ou pas --// 
 	do
 	{
 		//-- appel de fonction
-		int valeurUser;
-		printf("Combien de resistance? :\n");
-		scanf("%d", &valeurUser);
-		InitInfoPontDiviseur(valeurUser);
 		//-- insertion de valeur de résistance pour le pont divisueur de tension --//
-		
+		InitInfoPontDiviseur(&demoPontDiv);
 
 		//-- calcul de la tension sur chaque résistance du pont diviseur --// 
-
+		CalculTensionPontDivisueur(&demoPontDiv);
 		
 		//-- afficahge de la tension sur chaque pont diviseur --// 
-
+		AffichageTensionDivisueur(demoPontDiv);
 
 		printf("\nVoulez-vous quitter le programme ? [o/n]"); 
-		scanf("%c", &choixUser); 
+		scanf("%c", &choixUser, 1); 
 
 		//-- s'assure que le buffer est vider pour refaire une nouvelle demande --//
 		while ((getchar() != '\n') && (getchar() != EOF));
