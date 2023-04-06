@@ -2,7 +2,7 @@
 //Nom du fichier		: PontResistifs.h
 //Nom auteur			: Diogo Ferreira
 //Date de création		: 07.03.2023
-//Date de modification	: 07.03.2023 DF
+//Date de modification	: 04.04.2023 DF
 /*
   Description:
   -
@@ -19,17 +19,17 @@
 #define MAXRES 10000000
 #define MINRES 0.1
 
-extern struct pontDiviseur
+typedef struct 
 {
 	unsigned int NbrMaxRes;
 	unsigned int VAlim;
 	float TbResistor[MAXNBRRES];
 	float TbVResistor[MAXNBRRES];
-};
+}pontDiviseur;
 
-extern void InitInfoPontDiviseur(struct pontDiviseur* demoPontDiv);
-extern void CalculTensionPontDiviseur(struct pontDiviseur* demoPontDiv);
-extern void AffichageTensionPontDiviseur(struct pontDiviseur demoPontDiv);
+void InitInfoPontDiviseur(pontDiviseur* demoPontDiv);
+void CalculTensionPontDiviseur(pontDiviseur* demoPontDiv);
+void AffichageTensionPontDiviseur(pontDiviseur demoPontDiv);
 
 
 #endif

@@ -17,9 +17,9 @@
 #define HEADER
 
 // Variables globales
-#define NBMAXRES		10			// Nombre maximum de résistances
+#define NBMAXRES	10			// Nombre maximum de résistances
 #define	VCCMAX		30			// Tension maximum du pont
-#define RMAX		10000000	// Valeur maximum d'une résistnace
+#define RMAX		10000000.0	// Valeur maximum d'une résistnace
 #define	RMIN		0.1			// Valeur minimum d'une résistance
 
 // Stuctures
@@ -29,8 +29,8 @@ typedef struct
 {
 	char nbRes;		// Nombre de résistances dans le pont
 	char vccPont;	// Tension d'alimentation du pont
-	int	tb_ValRes[10];	// Tableau comprenant la valeur des résistances
-	float tb_URes[10];	// Tableau comprenant la tension sur chaque résistance
+	float	tb_ValRes[10];	// Tableau comprenant la valeur des résistances
+	float	tb_URes[10];	// Tableau comprenant la tension sur chaque résistance
 }pontDiviseur;
 #endif // ! STRUCTURE_H
 
@@ -38,6 +38,6 @@ typedef struct
 // Prototype de fonction
 void InitInfoPontDiviseur(pontDiviseur* demoPontDiv);
 void CalculTensionPontDiviseur(pontDiviseur* demoPontDiv);
-void AffichageTensionPontDiviseur(pontDiviseur demoPontDiv);
+void AffichageTensionPontDiviseur(pontDiviseur* demoPontDiv);
 
 #endif
