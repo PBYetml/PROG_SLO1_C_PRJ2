@@ -125,13 +125,13 @@ void CalculTensionPontDiviseur(pontDiviseur* demoPontDiv)
 // Auteur : JAR
 // Date modification : 07.03.2023
 //---
-void AffichageTensionPontDiviseur(pontDiviseur* demoPontDiv)
+void AffichageTensionPontDiviseur(pontDiviseur demoPontDiv)
 {
 	// Variables locales
 	char i = 0;
 
-	for (i = 0; i < demoPontDiv->nbRes; i++)
+	for (i = 0; i < demoPontDiv.nbRes; i++)
 	{
-		printf("Tension sur la resistance %d: %.2eV\n", i, demoPontDiv->tb_URes[i]);
+		printf("Tension sur la resistance %d: %.2eV\n", i, demoPontDiv.tb_URes[i]);
 	}
 }

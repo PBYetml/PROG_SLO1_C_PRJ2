@@ -35,6 +35,6 @@ typedef struct
 // Prototype de fonction
 void InitInfoPontDiviseur(pontDiviseur* demoPontDiv);
 void CalculTensionPontDiviseur(pontDiviseur* demoPontDiv);
-void AffichageTensionPontDiviseur(pontDiviseur* demoPontDiv);
+void AffichageTensionPontDiviseur(pontDiviseur demoPontDiv);
 
 #endif
