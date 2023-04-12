@@ -50,22 +50,26 @@ void InitInfoPontDiviseur(pontDiviseur* demoPontDiv)
 	//-- s'assure que le buffer est vider pour refaire une nouvelle demande --//
 	while ((getchar() != '\n') && (getchar() != EOF));
 
-	for (i = 0; i < demoPontDiv->nbRes; i++)
+	i = 0;
+	do
 	{
-		do
+		// Afficher une demande de la valeur de la résistance
+		printf("Entrer la valeur de la resistance %d\n", i);
+		// Récupération de la valeur de la résistance
+		scanf("%f", &demoPontDiv->tb_ValRes[i]);
+		// Test que la valeur soit dans les limites définies si non recommencer
+		if ((demoPontDiv->tb_ValRes[i] > RMAX) || (demoPontDiv->tb_ValRes[i] < RMIN))
 		{
-			// Afficher une demande de la valeur de la résistance
-			printf("Entrer la valeur de la resistance %d\n", i);
-			// Récupération de la valeur de la résistance
-			scanf("%f", &demoPontDiv->tb_ValRes[i]);
-			// Test que la valeur soit dans les limites définies si non recommencer
-			if ((demoPontDiv->tb_ValRes[i] > RMAX) || (demoPontDiv->tb_ValRes[i] < RMIN))
-			{
-				printf("La valeur ne rentre pas dans les limites(maximum %f et minimum %f)\n", RMAX, RMIN);
-			}
-		} while ((demoPontDiv->tb_ValRes[i] > RMAX) || (demoPontDiv->tb_ValRes[i] < RMIN));
-	}
+			printf("La valeur ne rentre pas dans les limites(maximum %f et minimum %f)\n", RMAX, RMIN);
+		}
+		else
+		{
+			i++;
+		}
+	} while (i < demoPontDiv->nbRes);
 
+	//-- s'assure que le buffer est vider pour refaire une nouvelle demande --//
+	while ((getchar() != '\n') && (getchar() != EOF));
 
 	// Afficher	une demande de Vcc du pont
 	printf("Entrer la tension de votre pont\n");
@@ -82,6 +86,9 @@ void InitInfoPontDiviseur(pontDiviseur* demoPontDiv)
 		demoPontDiv->vccPont = 1;
 		printf("La valeur entree est trop petit. Votre tension de pont est 1V\n");
 	}
+
+	//-- s'assure que le buffer est vider pour refaire une nouvelle demande --//
+	while ((getchar() != '\n') && (getchar() != EOF));
 }
 
 
