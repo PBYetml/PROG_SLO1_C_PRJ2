@@ -1,36 +1,28 @@
 #ifndef PontResistifs
 #define PontResistifs
-#include <stdio.h>                  // entrée - sortie
-#include <stdlib.h>                 // pour les fonctions systèmes
-#include <stdint.h>
 
-//déclaration des constantes
-const unsigned char MaxRes = 10;
-const unsigned char MaxTension = 30;
-const unsigned int ValMax_Res = 10000000;
-const unsigned float ValMin_Res = 0.1;
+
+//déclaration des constantes global
+#define Nb_Max_Res		10				// Nombre maximum de résistances dans le pont diviseur
+#define U_Alim_Max		30				// Tension maximale d'alimentation
+#define ValRes_Max			10e6			// Valeur maximale d'une résistance
+#define ValRes_Min			0.1				// Valeur minimale d'une résistance
 
 
 //définition de la structure
 
-struct pontDiviseur {
-	unsigned char Nb_Res;
-	unsigned char Vin;
-	unsigned int ValRes[100];		//Valeur du tableau à vérifier
-	unsigned char Val_U_Res[100];	//Valeur du tableau à vérifier
-};
+typedef struct
+{
+	unsigned char Nb_Res;		//Nombre de résistances dans le pont
+	unsigned char Vin;			//Tension d'alimentation du pont
+	float ValRes[10];			//Valeur des résistances
+	float Val_U_Res[10];		//Valeur de la tension sur une résistance
+	float Val_U_Entre_Res[10];	//Valeur entre deux résistance
+}pontDiviseur;
 
-//Déclaration des pointeurs
-struct pontDiviseur* Nb_Res;
-struct pontDiviseur* Vin;
-struct pontDiviseur* ValRes;
-struct pontDiviseur* Val_U_Res;
-
-char* ptr_Nb_Res = *Nb_Res;
-int* ptr_ValRes = *ValRes;
-int* ptr_Vin = *Vin;
 //Déclaration des prototype de fonction
-void InitInfoPontDiviseur(char choixUser, char* ptr_Nb_Res)
+void InitInfoPontDiviseur(pontDiviseur* demoPontDiv);
+void CalculTensionPontDiviseur(pontDiviseur* demoPontDiv);
+void AffichageTensionPontDiviseur(pontDiviseur demoPontDiv);
 
-#endif  !PontResistifs;
-
+#endif  //PontResistifs;
