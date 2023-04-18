@@ -23,44 +23,44 @@
 #include <stdio.h>                  // entrée - sortie
 #include <stdlib.h>                 // pour les fonctions systèmes
 #include <stdint.h>
-#include "PontResistifs.h"
-//-- librairie personnelle --// 
 
+//-- librairie personnelle --// 
+#include "PontResistifs.h"
 
 
 //-- déclaration de constantes --// 
-#define VOTRE_NOM			"Feliciano"
+#define Feliciano			"Feliciano"
 
 
 //-- programme princiaple --// 
 void main()
 {
 	//-- déclaration de variables --// 
-	char choixUser = 0; 
+	char choixUser = 0;
 
 	//-- déclaration de structure --// 
-
+	pontDiviseur ValPontDiviseur;
 
 	//-- boucle permettant de savoir si l'utilisateur veut continuer ou pas --// 
 	do
 	{
 		//-- appel de fonction
-		//-- insertion de valeur de résistance pour le pont divisueur de tension --//
-
+		//-- insertion de valeur de résistance pour le pont diviseur de tension --//
+		InitInfoPontDiviseur(&ValPontDiviseur);
 
 		//-- calcul de la tension sur chaque résistance du pont diviseur --// 
+		CalculTensionPontDiviseur(&ValPontDiviseur);
 
-		
-		//-- afficahge de la tension sur chaque pont diviseur --// 
+		//-- affichage de la tension sur chaque pont diviseur --// 
+		AffichageTensionPontDiviseur(ValPontDiviseur);
 
-
-		printf("\nVoulez-vous quitter le programme ? [o/n]"); 
-		scanf("%c", &choixUser); 
+		printf("\nVoulez-vous quitter le programme ? [o/n]");
+		scanf_s("%c", &choixUser);
 
 		//-- s'assure que le buffer est vider pour refaire une nouvelle demande --//
 		while ((getchar() != '\n') && (getchar() != EOF));
-		
-	} while (!(choixUser == 'o' || choixUser == 'O')); 
+
+	} while (!(choixUser == 'o' || choixUser == 'O'));
 
 
 	//pause du programme//
