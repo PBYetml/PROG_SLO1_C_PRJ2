@@ -55,7 +55,7 @@ void main()
 		//-- afficahge de la tension sur chaque pont diviseur --// 
 		AffichageTensionPontDiviseur(monPontDiviseur);
 
-		printf("\nVoulez-vous quitter le programme ? [o/n]"); 
+		printf("\nVoulez-vous quitter le programme ? [o/n]\n"); 
 		scanf("%c", &choixUser); 
 
 		//-- s'assure que le buffer est vider pour refaire une nouvelle demande --//

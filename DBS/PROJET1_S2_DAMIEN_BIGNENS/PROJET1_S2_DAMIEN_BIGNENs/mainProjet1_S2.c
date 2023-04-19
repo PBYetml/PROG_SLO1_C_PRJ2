@@ -28,17 +28,12 @@
 //-- librairie personnelle --// 
 #include "PontResistifs.h"  
 
+
 //-- déclaration de constantes --// 
 #define DAMEIN			"DAMIEN"
 
 //-- déclaration de structure globales--// 
-struct str_pontDiviseur
-{
-	char com_resistance;
-	char alime;
-	double tb_valeur[9]; 
-	char val_entre_resistance;
-};
+
 
 
 //-- programme princiaple --// 
@@ -48,22 +43,22 @@ void main()
 	char choixUser = 0; 
 
 	//-- déclaration de structure --// 
-	struct str_pontDiviseur S_ParamA;
+	str_pontDiviseur str_valeur;
 
 	//-- boucle permettant de savoir si l'utilisateur veut continuer ou pas --// 
 	do
 	{
 		//-- appel de fonction
 		//-- insertion de valeur de résistance pour le pont divisueur de tension --//
-		InitInfoPontDiviseur(&S_ParamA);
+		InitInfoPontDiviseur(&str_valeur);
 
 		//-- calcul de la tension sur chaque résistance du pont diviseur --// 
 
-		CalculTensionPontDivisueur(S_ParamA);
+		CalculTensionPontDivisueur(&str_valeur);
 		
 		//-- afficahge de la tension sur chaque pont diviseur --// 
 
-		AffichageTensionPontDivisueur(S_ParamA.val_entre_resistance);
+		AffichageTensionPontDivisueur(str_valeur);
 
 		printf("\nVoulez-vous quitter le programme ? [o/n]"); 
 		scanf_s("%c", &choixUser); 
