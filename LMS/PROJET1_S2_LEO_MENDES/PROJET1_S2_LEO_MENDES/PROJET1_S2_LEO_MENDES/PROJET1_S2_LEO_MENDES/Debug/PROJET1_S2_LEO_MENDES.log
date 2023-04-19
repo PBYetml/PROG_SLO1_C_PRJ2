@@ -1,0 +1,10 @@
+﻿  fonctionsPontDiv.c
+G:\3_TECH ES\PROG_SLO1_C_PRJ2\LMS\PROJET1_S2_LEO_MENDES\PROJET1_S2_LEO_MENDES\PontResistifs.h(27,20): warning C4305: 'initialisation' : troncation de 'double' à 'const float'
+G:\3_TECH ES\PROG_SLO1_C_PRJ2\LMS\PROJET1_S2_LEO_MENDES\PROJET1_S2_LEO_MENDES\fonctionsPontDiv.c(21,7): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+G:\3_TECH ES\PROG_SLO1_C_PRJ2\LMS\PROJET1_S2_LEO_MENDES\PROJET1_S2_LEO_MENDES\fonctionsPontDiv.c(35,8): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+G:\3_TECH ES\PROG_SLO1_C_PRJ2\LMS\PROJET1_S2_LEO_MENDES\PROJET1_S2_LEO_MENDES\fonctionsPontDiv.c(50,7): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  mainProjet1_S2.c
+G:\3_TECH ES\PROG_SLO1_C_PRJ2\LMS\PROJET1_S2_LEO_MENDES\PROJET1_S2_LEO_MENDES\PontResistifs.h(27,20): warning C4305: 'initialisation' : troncation de 'double' à 'const float'
+G:\3_TECH ES\PROG_SLO1_C_PRJ2\LMS\PROJET1_S2_LEO_MENDES\PROJET1_S2_LEO_MENDES\mainProjet1_S2.c(55,7): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Génération de code en cours...
+  PROJET1_S2_LEO_MENDES.vcxproj -> G:\3_TECH ES\PROG_SLO1_C_PRJ2\LMS\PROJET1_S2_LEO_MENDES\Debug\PROJET1_S2_LEO_MENDES.exe
