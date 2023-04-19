@@ -23,6 +23,7 @@
 #include <stdio.h>                  // entrée - sortie
 #include <stdlib.h>                 // pour les fonctions systèmes
 #include <stdint.h>
+
 #include "PontResistifs.h"			// pour le struct et les définitions
 
 //-- librairie personnelle --// 
