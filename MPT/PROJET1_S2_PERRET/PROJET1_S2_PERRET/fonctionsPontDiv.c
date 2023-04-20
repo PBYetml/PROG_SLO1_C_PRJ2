@@ -13,10 +13,19 @@
 
 void InitInfoPontDiviseur(str_pontDiviseur* pt_demoPontDiv)
 {
+	int retourScanF = 0;
 	int valeurUtilisateur;
-	printf("Veuillez inserer le nombre de resistances possible dans votre pont diviseur : ");
-	scanf_s("%d", &valeurUtilisateur);
-	while ((getchar() != '\n') && (getchar() != EOF));
+
+	do
+	{
+		printf("Veuillez inserer le nombre de resistances possible dans votre pont diviseur : ");
+		retourScanF = scanf_s("%d", &valeurUtilisateur);
+		while ((getchar() != '\n') && (getchar() != EOF));
+		if (retourScanF == 0)
+		{
+			printf("!!! ERREUR !!! \n");
+		}
+	} while (retourScanF == 0);
 
 	if (valeurUtilisateur > NB_MAX_RESISTANCES)
 	{
@@ -34,21 +43,31 @@ void InitInfoPontDiviseur(str_pontDiviseur* pt_demoPontDiv)
 	for (indexResistance = 0; indexResistance < valeurUtilisateur; indexResistance++)
 	{
 		printf("Veuillez inserer une valeur de resistance allant de %1.1lf a %.0lfMohm pour R%d: ", VALEUR_MIN_RESISTANCE, VALEUR_MAX_RESISTANCE / 10e6, indexResistance + 1);
-		scanf_s("%lf", &pt_demoPontDiv->tb_valResistances[indexResistance]); // modifie les valeurs du tableau valReistance à la première itération ce sera la case0, la 2ème case1, etc..
+		retourScanF = scanf_s("%lf", &pt_demoPontDiv->tb_valResistances[indexResistance]); // modifie les valeurs du tableau valReistance à la première itération ce sera la case0, la 2ème case1, etc..
 		//-- s'assure que le buffer est vidé pour refaire une nouvelle demande --//
+
+
 		while ((getchar() != '\n') && (getchar() != EOF));
 
-		if (pt_demoPontDiv->tb_valResistances[indexResistance] < VALEUR_MIN_RESISTANCE || pt_demoPontDiv->tb_valResistances[indexResistance] > VALEUR_MAX_RESISTANCE)
+		if (retourScanF == 0 || pt_demoPontDiv->tb_valResistances[indexResistance] < VALEUR_MIN_RESISTANCE || pt_demoPontDiv->tb_valResistances[indexResistance] > VALEUR_MAX_RESISTANCE)
 		{
 			printf("!!! Erreur de valeur !!! \n");
 			indexResistance--;				 //retourne dans la boucle for avec avec la valeur avant le message d'erreur, répètera la même itération de la boucle
 		}
 	}
 	printf("\n");
-	printf("Veuillez inserer la tension d'alimentation du montage : ");
-	scanf_s("%d", &valeurUtilisateur);
-	//-- s'assure que le buffer est vidé pour refaire une nouvelle demande --//
-	while ((getchar() != '\n') && (getchar() != EOF));
+
+	do
+	{
+		printf("Veuillez inserer la tension d'alimentation du montage : ");
+		retourScanF = scanf_s("%d", &valeurUtilisateur);
+		while ((getchar() != '\n') && (getchar() != EOF));
+		if (retourScanF == 0)
+		{
+			printf("!!! ERREUR !!! \n");
+		}
+	} while (retourScanF == 0);
+	printf("\n");
 
 	if (valeurUtilisateur > TENSION_MAX_PONTDIV)
 	{
@@ -62,6 +81,7 @@ void InitInfoPontDiviseur(str_pontDiviseur* pt_demoPontDiv)
 	}
 	pt_demoPontDiv->tensionAlimVe = valeurUtilisateur; //Stock la valeur dans la variable tensionAlimVe
 }
+
 
 void CalculTensionPontDiviseur(str_pontDiviseur* pt_demoPontDiv)
 {
@@ -111,4 +131,3 @@ void AffichageTensionPontDiviseur(str_pontDiviseur demoPontDiv)
 		}
 	}
 }
-
