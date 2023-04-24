@@ -140,7 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="fonctionsPontDiv.c" />
-    <ClCompile Include="K:\ES\Maitres-Eleves\SLO\Modules\SL134PROG\Epreuves\Projet1\mainProjet1_S2.c" />
+    <ClCompile Include="mainProjet1_S2.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PontResistifs.h" />
