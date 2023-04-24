@@ -124,7 +124,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="fonctionsPontDiv.c" />
-    <ClCompile Include="maintest1_s2.c" />
+    <ClCompile Include="mainProjet1_S2.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PontResistifs.h" />
