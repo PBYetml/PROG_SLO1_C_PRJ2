@@ -28,7 +28,7 @@ void InitInfoPontDiviseur(str_pontDiviseur* pt_demoPontDiv)
 	int i;
 	for (i = 0; i < valeur; i++)
 	{
-		printf("Veuillez inserer une valeur de resistance allant de %1.1lf a %.0lfMohm pour R%d:", VAL_MIN_resistance, VAL_MAX_resistance / 10e6, i + 1);
+		printf("Veuillez inserer une valeur de resistance allant de 0.1 a 10Mohm pour R%d:", i + 1);
 		scanf_s("%lf", &pt_demoPontDiv->tb_valeur_R[i]); 
 		while ((getchar() != '\n') && (getchar() != EOF));
 		if (pt_demoPontDiv->tb_valeur_R[i] < VAL_MIN_resistance || pt_demoPontDiv->tb_valeur_R[i] > VAL_MAX_resistance)
@@ -58,6 +58,7 @@ void InitInfoPontDiviseur(str_pontDiviseur* pt_demoPontDiv)
 void CalculTensionPontDivisueur(str_pontDiviseur* pt_demoPontDiv)
 {
 	double sommeResistances = 0;  
+	double EnretResistances = 0;
 	int i;
 	for (i = 0; i < pt_demoPontDiv->com_resistance; i++)
 	{
@@ -71,6 +72,15 @@ void CalculTensionPontDivisueur(str_pontDiviseur* pt_demoPontDiv)
 		tensionResistance_n = pt_demoPontDiv->alime * (pt_demoPontDiv->tb_valeur_R[e] / sommeResistances);		//tensionResistanceU = VpontRu
 		pt_demoPontDiv->tb_bornes_resistance[e] = tensionResistance_n;
 	}
+	EnretResistances = sommeResistances ; 
+	for (e = 0; e < pt_demoPontDiv->com_resistance; e++)
+	{
+		EnretResistances -= pt_demoPontDiv->tb_valeur_R[e];
+		pt_demoPontDiv->tb_v_Entre_Resistances[e] = pt_demoPontDiv->alime * (EnretResistances / sommeResistances);
+
+	}
+
+
 }
 
 
@@ -79,6 +89,12 @@ void AffichageTensionPontDivisueur(str_pontDiviseur pt_demoPontDiv)
 	int i;
 	for (i = 0; i < pt_demoPontDiv.com_resistance; i++)
 	{
-		printf("Tension sur la resistance R%d vaut %1.3lf[V]\n", i + 1, pt_demoPontDiv.tb_bornes_resistance[i]);
+		printf("Tension sur la resistance R%d vaut %.2e[V]\n", i + 1, pt_demoPontDiv.tb_bornes_resistance[i]);
 	}
+
+	for (i = 0; i < pt_demoPontDiv.com_resistance; i++)
+	{
+		printf("Tension sur la tension VS%d vaut %.2e[V]\n", ((pt_demoPontDiv.com_resistance - 1) - i), pt_demoPontDiv.tb_v_Entre_Resistances[i]);
+	}
+
 }
