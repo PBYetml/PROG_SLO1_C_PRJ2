@@ -104,6 +104,7 @@ void CalculTensionPontDiviseur(pontDiviseur* demoPontDiv)
 {
 	// Variables locales
 	float rTot = 0;
+	float rPoint = 0;
 	char i = 0;
 
 	for (i = 0; i < demoPontDiv->nbRes; i++)
@@ -112,7 +113,8 @@ void CalculTensionPontDiviseur(pontDiviseur* demoPontDiv)
 	}
 	for (i = 0; i < demoPontDiv->nbRes; i++)
 	{
-		demoPontDiv->tb_URes[i] = demoPontDiv->vccPont * demoPontDiv->tb_ValRes[i] / rTot;
+		rPoint += demoPontDiv->tb_ValRes[i];
+		demoPontDiv->tb_URes[i] = demoPontDiv->vccPont * rPoint / rTot;
 	}
 }
 
@@ -129,9 +131,11 @@ void AffichageTensionPontDiviseur(pontDiviseur demoPontDiv)
 {
 	// Variables locales
 	char i = 0;
+	float uPass = 0;
 
 	for (i = 0; i < demoPontDiv.nbRes; i++)
 	{
-		printf("Tension sur la resistance %d: %.2eV\n", i, demoPontDiv.tb_URes[i]);
+		printf("Tension sur la resistance %d: %.2eV\n", i, demoPontDiv.tb_URes[i] - uPass);
+		uPass = demoPontDiv.tb_URes[i];
 	}
 }
