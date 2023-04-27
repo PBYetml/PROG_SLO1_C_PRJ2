@@ -1,29 +1,28 @@
-#pragma once
 #ifndef PontResistifs
 #define PontResistifs
-#include "PontResistifs.h"
 
 //...................................constantes
 
-const int nombreMaxDeResPontDiv = 10;
-const int tensionMaxPontDiv = 30;
-const int valeurMaxRes = 10000000;
-const int valeurMinRes = 0.1;
+#define nombreMaxDeResPontDiv 10
+#define tensionMaxPontDiv     30
+#define valeurMaxRes          10e6
+#define valeurMinRes          0.1
 
 //...................................structures
 
 typedef struct {
-	int nbResComposantPonRes;
-	int tensionAlimPontRes;
-	int tbValRes;
-	int tbValTensionRes;
+	unsigned char nbResComposantPonRes;
+	unsigned char tensionAlimPontRes;
+	float tbValRes [10];
+	float tbValTensionRes [10];
+	float ValTensionEntreRes[10];
 }PontDiviseur;
 
 //...................................Prototypes
 
-int InitInofoPontDiviseur(PontDiviseur* demoPonDiv);
-int CalculTensionPontDiviseur(PontDiviseur* demoPonDiv);
-int AfficheTensionPontDiviseur(PontDiviseur demoPonDiv);
+void InitInofoPontDiviseur(PontDiviseur *demoPonDiv);
+void CalculTensionPontDiviseur(PontDiviseur *demoPonDiv);
+void affichageTensionPontDiviseur(PontDiviseur demoPonDiv);
 
 
-#endif // !PontResistifs
+#endif //PontResistifs

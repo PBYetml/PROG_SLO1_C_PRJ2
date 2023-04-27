@@ -29,7 +29,7 @@
 
 
 //-- déclaration de constantes --// 
-#define ElGHANDOUR			"ElGHANDOUR"
+#define ElGhandour			"ElGhandour"
 
 
 //-- programme princiaple --// 
@@ -39,20 +39,20 @@ void main()
 	char choixUser = 0; 
 
 	//-- déclaration de structure --// 
-
+	PontDiviseur ValeurPonDiviseur;
 
 	//-- boucle permettant de savoir si l'utilisateur veut continuer ou pas --// 
 	do
 	{
 		//-- appel de fonction
 		//-- insertion de valeur de résistance pour le pont divisueur de tension --//
-
+		InitInofoPontDiviseur(&ValeurPonDiviseur);
 
 		//-- calcul de la tension sur chaque résistance du pont diviseur --// 
-
+		CalculTensionPontDiviseur(&ValeurPonDiviseur);
 		
 		//-- afficahge de la tension sur chaque pont diviseur --// 
-
+		affichageTensionPontDiviseur(ValeurPonDiviseur);
 
 		printf("\nVoulez-vous quitter le programme ? [o/n]"); 
 		scanf("%c", &choixUser); 
