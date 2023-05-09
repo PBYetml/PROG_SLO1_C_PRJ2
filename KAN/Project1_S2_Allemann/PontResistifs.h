@@ -23,8 +23,8 @@ typedef struct {
 }pontDiviseur;
 
 void InitInfoPontDiviseur(pontDiviseur* demoPontDiv);
-void CalculTensionPontDivisueur(pontDiviseur* demoPontDiv);
-void AffichageTensionDivisueur(pontDiviseur demoPontDiv);
+void CalculTensionPontDiviseur(pontDiviseur* demoPontDiv);
+void AffichageTensionDiviseur(pontDiviseur demoPontDiv);
 
 
 

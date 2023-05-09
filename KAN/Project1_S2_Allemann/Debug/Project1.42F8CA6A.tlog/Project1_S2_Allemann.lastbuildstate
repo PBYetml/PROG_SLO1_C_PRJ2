@@ -1,2 +1,2 @@
-PlatformToolSet=v142:VCToolArchitecture=Native32Bit:VCToolsVersion=14.29.30133:TargetPlatformVersion=10.0.19041.0:
-Debug|Win32|C:\Users\phibovey\OneDrive - Education Vaud\PROG\Epreuves\TESTS_2022_2023\PROJET2\PROG_SLO1_C_PRJ2\KAN\Project1_S2_Allemann\|
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v142:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=10.0
+Debug|Win32|C:\Users\kevallemann\source\repos\TE\KAN\Project1_S2_Allemann\|

@@ -72,9 +72,9 @@ void InitInfoPontDiviseur(pontDiviseur* demoPontDiv)
 
 }
 //Calcul de la tension aux bornes des res
-void CalculTensionPontDivisueur(pontDiviseur* demoPontDiv)
+void CalculTensionPontDiviseur(pontDiviseur* demoPontDiv)
 {
-	float RTot;
+	float RTot = 0.0;
 	int i;
 
 	// Resistance total
@@ -90,7 +90,7 @@ void CalculTensionPontDivisueur(pontDiviseur* demoPontDiv)
 	}
 }
 //Fonction d'affichge
-void AffichageTensionDivisueur(pontDiviseur demoPontDiv)
+void AffichageTensionDiviseur(pontDiviseur demoPontDiv)
 {
 	int i;
 	for (i = 0; i < demoPontDiv.nbr_resistance; i++)
