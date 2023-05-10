@@ -1,0 +1,5 @@
+﻿mainProjet1_S2.obj : error LNK2005: nbrMaxRes déjà défini(e) dans fonctionsPontDiv.obj
+mainProjet1_S2.obj : error LNK2005: maxTension déjà défini(e) dans fonctionsPontDiv.obj
+mainProjet1_S2.obj : error LNK2005: maxRes déjà défini(e) dans fonctionsPontDiv.obj
+mainProjet1_S2.obj : error LNK2005: minRes déjà défini(e) dans fonctionsPontDiv.obj
+C:\Users\leomendes\Desktop\PROJET1_S2_LEO_MENDES\x64\Debug\PROJET1_S2_LEO_MENDES.exe : fatal error LNK1169: un ou plusieurs symboles définis à différentes reprises ont été rencontrés

@@ -69,12 +69,12 @@ void CalculTensionPontDiviseur(pontDiviseur* demoPontDiv) {
 		rTot += demoPontDiv->tab_ValRes[i];
 	}
 
-	// Calcul du facteur de correction
-	float correction = demoPontDiv->vAlim / rTot;
+	// Calcul du courant total sur le pont
+	float courant = demoPontDiv->vAlim / rTot;
 
 	// Calcul de la tension du potentieé chaque résistance
 	for (int i = demoPontDiv->nbrRes - 1; i >= 0; i--) {
-		tensionSuivante = tensionSuivante + demoPontDiv->tab_ValRes[i] * correction;
+		tensionSuivante = tensionSuivante + demoPontDiv->tab_ValRes[i] * courant;
 		demoPontDiv->tab_ValTension[i] = tensionSuivante;
 	}
 }

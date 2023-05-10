@@ -21,10 +21,10 @@
 #define DEFAULTVMIN 1
 
 //Déclaration de constante 
-static const int nbrMaxRes = NBRMAXRES;
-static const int maxTension = MAXTENSION; //en volt
-static const double maxRes = MAXRES; //10 Mega Ohm
-static const float minRes = MINRES; //1 Ohm
+extern const int nbrMaxRes = 10;
+extern const int maxTension = 30; //en volt
+extern const double maxRes = 1e7; //10 Mega Ohm
+extern const float minRes = 0.1; //1 Ohm
 
 //-- déclaration de structure --// 
 typedef struct 
