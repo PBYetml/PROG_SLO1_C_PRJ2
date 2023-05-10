@@ -10,7 +10,7 @@
 #ifndef ENTETE_MES_FONCTIONS
 #define ENTETE_MES_FONCTIONS
 
-const MAX_NOMBRE_RESISTANCES 10
+#define MAX_NOMBRE_RESISTANCES 10
 #define TENSION_MAX_PONT_DIVISEUR 30
 #define VALEUR_MAX_RESISTANCE 10e6 // 10*10^6
 #define VALEUR_MIN_RESISTANCE 0.1
@@ -18,8 +18,8 @@ const MAX_NOMBRE_RESISTANCES 10
 typedef struct {
 	int nbr_resistance;
 	int tension_ve;
-	double taille_resistance[MAX_NOMBRE_RESISTANCES];
-	float valeur_tension_R[MAX_NOMBRE_RESISTANCES];
+	double taille_resistance[10];
+	float valeur_tension_R[10];
 }pontDiviseur;
 
 void InitInfoPontDiviseur(pontDiviseur* demoPontDiv);
