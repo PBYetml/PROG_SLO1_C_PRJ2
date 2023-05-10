@@ -14,6 +14,7 @@ typedef struct {
 	unsigned char tensionAlimVe;
 	float valeurResistance[10];
 	float valeurTension[10];
+	float valeurTensionEntreResistance[10];
 }pontDiviseur;
 
 //déclarations des prototypes des fonctions

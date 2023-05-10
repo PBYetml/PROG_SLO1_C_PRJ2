@@ -72,6 +72,7 @@ void CalculTensionPontDiviseur(pontDiviseur* demoPontDiv)
 {
 	unsigned char i = 0;
 	float valResistanceTotale = 0;
+	float valTensionEntreResTot = 0;
 
 	// Calcul de la résistance totale
 	for (i = 0; i < demoPontDiv->nbDeResistance; i++)
@@ -83,6 +84,13 @@ void CalculTensionPontDiviseur(pontDiviseur* demoPontDiv)
 	for (i = 0; i < demoPontDiv->nbDeResistance; i++)
 	{
 		demoPontDiv->valeurTension[i] = demoPontDiv->tensionAlimVe * demoPontDiv->valeurResistance[i] / valResistanceTotale;
+	}
+
+	//Calcul de la tension entre les résistances
+	for (i = 0; i < demoPontDiv->nbDeResistance; i++)
+	{
+		valTensionEntreResTot = valTensionEntreResTot + demoPontDiv->valeurTensionEntreResistance[i];								//Addition de la chute de tension sur les résistances	
+		demoPontDiv->valeurTensionEntreResistance[i] = demoPontDiv->tensionAlimVe - valTensionEntreResTot;
 	}
 }
 
@@ -98,4 +106,11 @@ void AffichageTensionPontDiviseur(pontDiviseur demoPontDiv)
 	{
 		printf("La tension sur la résistance %d: %.2ev \n", i, demoPontDiv.valeurTension[i]);
 	}
+
+	//affiche la tension se trouvant entre chaque résistance avec 3 chiffres significatif
+	for (i = 0; i < demoPontDiv.nbDeResistance; i++)
+	{
+		printf("La tension au point milieu vaut %d: %.2eV\n", i, demoPontDiv.valeurTensionEntreResistance[i]);	//Affichage de la tension entre les résistances
+	}
+
 }
