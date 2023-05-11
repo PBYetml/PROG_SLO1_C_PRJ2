@@ -1,7 +1,7 @@
 /*	Nom du projet           : PROJET1_S1_ALLEMANN_KEVINYVESTOBIAS
 *	Nom du fichier			: fonctionPontDiv.c
 *	Nom auteur				: Kevin Allemann
-*	Date de création        : 07.03.2023
+*	Date de crÃ©ation        : 07.03.2023
 *	Date de modification    : 07.03.2023
 */
 /*
@@ -12,7 +12,6 @@
 *  -
 */
 #pragma warning(disable: 4996)
-#include "PontResistifs.h"
 
 //Librairie (standart)
 #include <stdio.h>
@@ -20,6 +19,8 @@
 #include <stdlib.h>
 #include <math.h>
 
+//Librairie (personnel)
+#include "PontResistifs.h"
 
 //Initialisation du pont diviseur
 void InitInfoPontDiviseur(pontDiviseur* demoPontDiv)
@@ -27,7 +28,7 @@ void InitInfoPontDiviseur(pontDiviseur* demoPontDiv)
 	int valeurUserI, i, erreur;
 	float valeurUserF;
 
-	//Nbr de résistances
+	//Nbr de rÃ©sistances
 	printf("Combien de resistance? :\n");
 	scanf("%d", &valeurUserI);
 
