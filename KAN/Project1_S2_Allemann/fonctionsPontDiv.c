@@ -76,6 +76,7 @@ void InitInfoPontDiviseur(pontDiviseur* demoPontDiv)
 void CalculTensionPontDiviseur(pontDiviseur* demoPontDiv)
 {
 	float RTot = 0.0;
+	float RPont = 0.0;
 	int i;
 
 	// Resistance total
@@ -87,7 +88,8 @@ void CalculTensionPontDiviseur(pontDiviseur* demoPontDiv)
 	// Tension de chaque resistance
 	for (i = 0; i < demoPontDiv->nbr_resistance; i++)
 	{
-		demoPontDiv->valeur_tension_R[i] = demoPontDiv->tension_ve * demoPontDiv->taille_resistance[i] / RTot;
+		RPont += demoPontDiv->taille_resistance[i];
+		demoPontDiv->valeur_tension_R[i] = demoPontDiv->tension_ve * RPont / RTot;
 	}
 }
 //Fonction d'affichge
@@ -96,6 +98,6 @@ void AffichageTensionDiviseur(pontDiviseur demoPontDiv)
 	int i;
 	for (i = 0; i < demoPontDiv.nbr_resistance; i++)
 	{
-		printf("Tension sur la resistance %d : %.2e\n", i, demoPontDiv.valeur_tension_R[i]);
+		printf("Tension sur la resistance %d : %.2e\n", i+1, demoPontDiv.valeur_tension_R[demoPontDiv.nbr_resistance-(i+1)]);
 	}
 }
